@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>http://www.lexilogos.com/allemand_goethe.htm</distributor>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>Johann Wolfgang von Goethe</author>
+                    <title xml:lang="fra">Le Roi des Aulnes</title>
+                    <title xml:lang="deu">Der Erlkoenig</title>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <refsDecl n="CTS">
+                <cRefPattern n="line" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/*[self::tei:l or self::tei:seg][@n='$2'])"/>
+                <cRefPattern n="poem" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="translation" xml:lang="fre" n="urn:cts:gerLit:ger0001.ger001.opp-fre1">
+                <div type="textpart" subtype="poem" n="1">
+                    <head>Le Roi des Aulnes<table></table></head>
+                    <l n="1">Quel est ce cavalier qui file si tard dans la nuit et le vent ?</l>
+                    <l n="1">C'est le père avec son enfant ;</l>
+                    <l n="2">Il serre le jeune garçon dans son bras,</l>
+                    <l n="3">Il le serre bien, il lui tient chaud.</l>
+                
+                    <l n="4">Mon fils, pourquoi caches-tu avec tant d'effroi ton visage ?</l>
+                    <l n="5">Père, ne vois-tu pas le Roi des Aulnes ?</l>
+                    <l n="6">Le Roi des Aulnes avec sa traîne et sa couronne ?</l>
+                    <l n="7">Mon fils, c'est un banc de brouillard.</l>
+                
+                    <l n="8">"Cher enfant, viens donc avec moi !</l>
+                    <seg n="9">Je jouerai à de très beaux jeux avec toi,</seg>
+                    <l n="10">Il y a de nombreuses fleurs de toutes les couleurs sur le rivage,</l>
+                    <l n="11">Et ma mère possède de nombreux habits d'or."</l>
+                
+                    <l n="12">Mon père, mon père, et n'entends-tu pas,</l>
+                    <l n="13">Ce que le Roi des Aulnes me promet à voix basse ?</l>
+                    <l n="14">Sois calme, reste calme, mon enfant !</l>
+                    <l n="15">C'est le vent qui murmure dans les feuilles mortes.</l>
+                
+                    <l n="16">"Veux-tu, gentil garçon, venir avec moi ?</l>
+                    <l n="17">Mes filles s'occuperont bien de toi</l>
+                    <l n="18">Mes filles mèneront la ronde toute la nuit,</l>
+                    <l n="19">Elles te berceront de leurs chants et de leurs danses."</l>
+                
+                    <l n="20">Mon père, mon père, ne vois-tu pas là-bas</l>
+                    <l n="21">Les filles du Roi des Aulnes dans ce lieu sombre ?</l>
+                    <l n="22">Mon fils, mon fils, je vois bien :</l>
+                    <l n="23">Ce sont les vieux saules qui paraissent si gris.</l>
+                
+                    <l n="24">"Je t'aime, ton joli visage me charme,</l>
+                    <l n="25">Et si tu ne veux pas, j'utiliserai la force."</l>
+                    <l n="26">Mon père, mon père, maintenant il m'empoigne !</l>
+                    <l n="27">Le Roi des Aulnes m'a fait mal !</l>
+                
+                    <l n="28">Le père frissonne d'horreur, il galope à vive allure,</l>
+                    <l n="29">Il tient dans ses bras l'enfant gémissant,</l>
+                    <l n="30">Il arrive à grand peine à son port ;</l>
+                    <l n="31">Dans ses bras l'enfant était mort.</l> 
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
